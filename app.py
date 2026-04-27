@@ -63,3 +63,6 @@ st.subheader("📈 Evolução do saldo")
 
 df = pd.DataFrame(st.session_state.historico, columns=["saldo"])
 st.line_chart(df)
+
+st.subheader("🧾 Últimas jogadas")
+st.write(st.session_state.historico[-5:])
