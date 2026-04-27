@@ -1,4 +1,14 @@
 import streamlit as st
+
+senha_correta = "1234"
+
+senha = st.text_input("🔐 Digite a senha", type="password")
+
+if senha != senha_correta:
+    st.warning("Acesso restrito")
+    st.stop()
+    
+import streamlit as st
 import pandas as pd
 
 st.set_page_config(page_title="BacBo Pro", layout="wide")
